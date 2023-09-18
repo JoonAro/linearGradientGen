@@ -2,8 +2,8 @@ const formInput = document.querySelector('form');
 //addeventlistener with function
 const color1 = document.querySelector('#color1');
 const color2 = document.querySelector('#color2');
-
 const directions = document.querySelectorAll('input[name="direction"]');
+//selects all inputs with the name="direction" 
 const answer = document.querySelector('p');
 
 const backGroundGen = () => {
@@ -14,8 +14,9 @@ const backGroundGen = () => {
             selectedValue = item.value;
         }
     }
-
-    answer.textContent = `linear-gradient(${selectedValue}, ${color1.value}, ${color2.value})`;
+let gradient = `linear-gradient(${selectedValue}, ${color1.value}, ${color2.value})`;
+document.body.style.backgroundImage = gradient;
+    answer.textContent = gradient;
 }
 
 formInput.addEventListener('change', backGroundGen);

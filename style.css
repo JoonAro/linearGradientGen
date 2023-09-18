@@ -1,4 +1,10 @@
+
+
 body {
     background-image: linear-gradient(#7bbb21, #00ffbb);
+    background-repeat: no-repeat;
     height:1600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:azure;
+
 }

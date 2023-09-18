@@ -16,6 +16,7 @@ const backGroundGen = () => {
     }
 let gradient = `linear-gradient(${selectedValue}, ${color1.value}, ${color2.value})`;
 document.body.style.backgroundImage = gradient;
+//change anything in html. javascript overrides css
     answer.textContent = gradient;
 }
 
